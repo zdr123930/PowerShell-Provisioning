@@ -6,12 +6,9 @@ Add-Type -AssemblyName System.Drawing
 # App data
 # ------------------------------
 $programs = [ordered]@{
-    "Password Change" = "C:\Zacs Apps\Password Change.exe"
-    "Account Enable"  = "C:\Zacs Apps\Account Enable.exe"
-    "Laptop Enable"   = "C:\Zacs Apps\Laptop Enable.exe"
-    "Leavers"         = "C:\Zacs Apps\Leavers.exe"
-    "Citrix"          = "C:\Zacs Apps\Citrix.exe"
-    "CSV Import"      = "C:\Zacs Apps\CSV Import.exe"
+    "Program 1" = "PATH TO EXE"
+    "Program 2"  = "PATH TO EXE"
+    "Program 3"   = "PATH TO EXE"
 }
 
 # ------------------------------
@@ -37,7 +34,7 @@ $headerPanel.BackColor = [System.Drawing.Color]::White
 $headerPanel.Padding = New-Object System.Windows.Forms.Padding(20, 18, 20, 12)
 
 $titleLabel = New-Object System.Windows.Forms.Label
-$titleLabel.Text = "User Provisioning Toolkit"
+$titleLabel.Text = "Program Name"
 $titleLabel.AutoSize = $false
 $titleLabel.Size = New-Object System.Drawing.Size(820, 55)
 $titleLabel.Font = New-Object System.Drawing.Font("Segoe UI Semibold", 20)
@@ -45,7 +42,7 @@ $titleLabel.ForeColor = [System.Drawing.Color]::FromArgb(34, 40, 49)
 $titleLabel.Location = New-Object System.Drawing.Point(20, 12)
 
 $subtitleLabel = New-Object System.Windows.Forms.Label
-$subtitleLabel.Text = "Choose a tool below to launch it directly - this program must be run as administrator."
+$subtitleLabel.Text = "Subtitle message."
 $subtitleLabel.AutoSize = $false
 $subtitleLabel.Size = New-Object System.Drawing.Size(820, 60)
 $subtitleLabel.Font = New-Object System.Drawing.Font("Segoe UI", 10)
